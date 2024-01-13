@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Lesson 11 exercises</title>
+    <style>
+      .two-hundred {
+        background-color: lightblue;
+      }
+
+      .seventy-five {
+        background-color: lightpink;
+      }
+
+      .eleven-a {
+        display: grid;
+        grid-template-columns: 200px 75px;
+        margin-bottom: 40px;
+      }
+
+      .eleven-b {
+        display: grid;
+        grid-template-columns: 50px 1fr 75px;
+        margin-bottom: 40px;
+      }
+
+      .eleven-c {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        column-gap: 20px;
+        row-gap: 10px;
+        margin-bottom: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="eleven-a">
+      <div class="two-hundred">200px</div>
+      <div class="seventy-five">75px</div>
+    </div>
+
+    <div class="eleven-b">
+      <div class="two-hundred">col1</div>
+      <div class="seventy-five">col2</div>
+      <div class="two-hundred">col3</div>
+    </div>
+    
+    <div class="eleven-c">
+      <div class="seventy-five">col1</div>
+      <div class="seventy-five">col2</div>
+      <div class="seventy-five">col3</div>
+      <div class="seventy-five">col4</div>
+      <div class="seventy-five">col1</div>
+      <div class="seventy-five">col2</div>
+      <div class="seventy-five">col3</div>
+      <div class="seventy-five">col4</div>
+    </div>
+
+
+  </body>
+</html>

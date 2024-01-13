@@ -1,0 +1,74 @@
+<!--Continuing from the google seach bar exercise in lesson 8, timestamp 2:46:50
+
+
+To center text, grab each line and wrap it in a div and hit text-align: center!!!!-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>More lesson 9 dude</title>
+    <style>
+      .google {
+        display: block;
+        height: 100px;
+        display: inline-block;
+      }
+
+      .input {
+        height: 30px;
+        width: 400px;
+        border-radius: 20px;
+        border: none;
+        box-shadow: 0px 0px 5px rgba(0,0,0,0.3);
+        padding-left: 15px;
+        display: inline-block;
+        margin-bottom: 30px;
+      }
+
+      .lucky-button,
+      .g-button {
+        font-family: Arial;
+        padding-left: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-right: 10px;
+        border: none;
+      }
+
+      .lucky-button {
+        margin-left: 5px;
+      }
+
+      .g-button {
+        margin-right: 5px;
+      }
+
+      .div-buttons,
+      .div-input,
+      .div-google {
+        text-align: center;
+      }
+
+    </style>
+  </head>
+  <body>
+
+    <div class="div-google">
+      <img class="google" src="google.png">
+    </div>
+
+    <div class="div-input">
+      <input class="input" type="text" placeholder="Search Google or type a URL">
+    </div>
+
+    <div class="div-buttons">
+      <button class="g-button">
+        Google Search
+      </button>
+      <button class="lucky-button">
+        I'm Feeling Lucky
+      </button>
+    </div>
+
+  </body>
+</html>

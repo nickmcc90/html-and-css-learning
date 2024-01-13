@@ -1,0 +1,100 @@
+<!--Inline styles are when you write a style attribute inside an element line shown
+      <div style="background-color: lightblue;">div 1</div>
+      This just helps to demonstrate the concept of grids without having to create a whole style
+      sheet somewhere else
+
+  Remember that divs are display block by default. When they are put into a grid, they fill up the grid without
+  needing a display: inline-block
+
+
+      Having a column width be 1fr means that it will take up the remaining freespace on the page,
+      no matter what size the window open is.
+        grid-template-columns: 100px 1fr;
+
+      If there are two columns at the end with 1fr, they will divvy up the remaining space so that they both
+      have an equal share of the remaining space. If one is 1fr and the other is 2fr, the 2fr will get twice as much remaining space.
+            grid-template-columns: 100px 1fr 2fr;
+
+
+  You can make it so that there is always ample space for you to have your code show up in the browser by putting
+  a style attrtibute in the body element that has padding-bottom: 1000px;
+
+
+  To have more rows, just add more rows. The rows will wrap around underneath the previous row to however many columns
+  that you specified.
+
+  To have a gap in the columns just. Also row spacing.
+      column-gap: 20px;
+      row-gap: 40px;
+
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Grid practice</title>
+    <style></style>
+  </head>
+  <body style="padding-bottom: 1000px">
+    <div style="
+      display: grid;
+      grid-template-columns: 100px 100px 200px;
+      
+      ">
+      <div style="background-color: lightblue;">100px</div>
+      <div style="background-color: lightpink;">100px<p>text</p></div>
+      <div style="background-color: lightblue;">200px</div>
+    </div>
+
+    <div style="
+      margin-top: 30px;
+      display: grid;
+      grid-template-columns: 100px 100px;
+      
+      ">
+      <div style="background-color: lightblue;">div 1</div>
+      <div style="background-color: lightpink;">div 2<p>text</p></div>
+      <div style="background-color: lightpink;">100px</div>
+  </div>
+
+  
+    <div style="
+      margin-top: 30px;
+      display: grid;
+      grid-template-columns: 100px 1fr;
+      
+      ">
+      <div style="background-color: lightblue;">100px</div>
+      <div style="background-color: lightpink;">1fr</div>
+  </div>
+
+
+
+  <div style="
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 100px 1fr 2fr;
+    
+    ">
+    <div style="background-color: lightblue;">100px</div>
+    <div style="background-color: lightpink;">1fr</div>
+    <div style="background-color: lightblue;">2fr</div>
+</div>
+
+<div style="
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 20px;
+  row-gap: 40px;
+  ">
+  <div style="background-color: lightblue; height: 100px;">1fr</div>
+  <div style="background-color: lightpink;">1fr</div>
+  <div style="background-color: lightblue;">1fr</div>
+  <div style="background-color: lightpink; height: 100px;">1fr</div>
+  <div style="background-color: lightblue;">1fr</div>
+  <div style="background-color: lightpink;">1fr</div>
+</div>
+
+  </body>
+</html>

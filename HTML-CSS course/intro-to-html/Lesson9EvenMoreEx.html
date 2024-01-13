@@ -1,0 +1,172 @@
+<!--I've found that when I'm trying to get the div to "display: inline-block", I have to manually adjust the widths
+of all the elements inside the div before I can get it to have a perfect border. There's gotta be another way to
+just make the div box cut into the specified widths of the elements....-->
+
+<!--figure out how to get two elements on one line from 10 d exercise, 3:16:55
+
+Answer for top image overflow: I didn't have a semicolon after the 100% width for the image element within its top div
+Answer for two elements on one line: They were already both inline elements and both 100% width, the font-size
+on the text was to big so that the text was forced to go on the bottom line. It did this because it was trapped in a bigger div so it
+couldn't just go next to it.-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hard exercises in lesson 9</title>
+    <style>
+      p {
+        font-family: Arial;
+      }
+      
+
+      .kitty {
+        height: 150px;
+        width: 100%;
+        margin-bottom: 10px;
+        display: inline-block;
+        
+      }
+
+      .name {
+        font-weight: bold;
+        font-size: 20px;
+        margin-top: 0px;
+        margin-bottom: 8px;
+        width: 150px;
+      }
+
+      .friend-count {
+        color: grey;
+        margin-top: 0px;
+        font-size: 13px;
+        width: 100%;
+        margin-left: 3px;
+      }
+
+      .friend-button {
+        background-color: rgb(62, 95, 173);
+        color: white;
+        font-size: 15px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+        border: none;
+        border-radius: 5px;
+        margin-top: 5px;
+        transition: opacity 0.15s;
+      }
+
+      .friend-button:hover {
+        opacity: 0.8
+      }
+
+      .friend-button:active {
+        opacity: 0.6
+      }
+
+      .top {
+        width: 100%;
+        display: inline-block;
+      }
+
+      .boxxed-up {
+        display: inline-block;
+        border: 1px solid grey;
+        padding-bottom: 10px;
+        box-shadow: 1px 1px 10px rgba(0,0,0,0.2);
+        margin-right: 10px;
+        width: 200px;
+      }
+
+      .friend-count-space,
+      .profile-pic {
+        display: inline-block;
+        vertical-align: middle;
+      }
+
+      .friend-count-space {
+        display: inline-block;
+      }
+
+      .profile {
+        width: 40px;
+        height: 40px;
+        border-radius: 40px;
+      }
+
+      .bottom {
+        margin-left: 7px;
+      }
+    </style>
+  </head>
+  <body>
+
+    <div class="boxxed-up">
+      <div class="top">
+        <img class="kitty" src="cat.jpg">
+      </div>
+      <div class="bottom">
+        <p class="name">
+          Ms. Mowthers
+        </p>
+        <div class="profile-pic">
+          <img class="profile" src="elephant.jpg">
+        </div>
+        <div class="friend-count-space">
+          <p class="friend-count">
+            Absolutely zero friends
+          </p>
+        </div>
+        <button class="friend-button">
+          Add Friend
+        </button>
+      </div>
+    </div>
+
+    <div class="boxxed-up">
+      <div class="top">
+        <img class="kitty" src="dog.jpg">
+      </div>
+      <div class="bottom">
+        <p class="name">
+          Mr. Buttons
+        </p>
+        <div class="profile-pic">
+          <img class="profile" src="elephant.jpg">
+        </div>
+        <div class="friend-count-space">
+          <p class="friend-count">
+            2 mutual friends
+          </p>
+        </div>
+        <button class="friend-button">
+          Add Friend
+        </button>
+      </div>
+    </div>
+
+    <div class="boxxed-up">
+      <div class="top">
+        <img class="kitty" src="anteater.jpg">
+      </div>
+      <div class="bottom">
+        <p class="name">
+          Monseiur Antsy
+        </p>
+        <div class="profile-pic">
+          <img class="profile" src="elephant.jpg">
+        </div>
+        <div class="friend-count-space">
+          <p class="friend-count">
+            4 mutual friends
+          </p>
+        </div>
+        <button class="friend-button">
+          Add Friend
+        </button>
+      </div>
+    </div>
+
+  </body>
+</html>
