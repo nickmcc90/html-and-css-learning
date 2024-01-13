@@ -1,14 +1,65 @@
-<!--
+<!DOCTYPE html>
 
-
-
-
-
-
-
-
-
-
-
-  
--->
+<html lang="en"> <!--This adds a language attritube to the html tag.-->
+  <head>
+    <meta charset="UTF-8"> <!--You can set browser behavior with meta elements.-->
+    <title>CatPhotoApp</title>
+  </head>
+  <body>
+    <main>
+      <h1>CatPhotoApp</h1> <!--Don't forget that instead of styling a <p> element with CSS, you can just make a <h1,h2 or h3> element-->
+      <section> <!--sections are different than divs in that they do have meaning. They are meant to group specific elements that are all related. Section elements are meant to make readability of the code easier.-->
+        <h2>Cat Photos</h2>
+        <!-- TODO: Add link to cat photos -->
+        <p>See more <a target="_blank" href="https://freecatphotoapp.com">cat photos</a> in our gallery.</p>
+        <a href="https://freecatphotoapp.com"><img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back."></a> <!--Here we link an image to a link. Alt text is for in case the image doesn't load, it shows the alt text-->
+      </section>
+      <section>
+        <h2>Cat Lists</h2>
+        <h3>Things cats love:</h3>
+        <ul> <!--unordered list paired with li elements for bullet points.-->
+          <li>cat nip</li>
+          <li>laser pointers</li>
+          <li>lasagna</li>
+        </ul>
+        <figure> <!--These are figure elements. They allow an image to have a caption.-->
+          <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg" alt="A slice of lasagna on a plate.">
+          <figcaption>Cats <em>love</em> lasagna.</figcaption>  <!--The em element allows the text inside it to be emphasized, or in italics.-->
+        </figure>
+        <h3>Top 3 things cats hate:</h3>
+        <ol> <!--This is like the ul element but ol is for numbered lists-->
+          <li>flea treatment</li>
+          <li>thunder</li>
+          <li>other cats</li>
+        </ol>
+        <figure>
+          <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/cats.jpg" alt="Five cats looking around a field.">
+          <figcaption>Cats <strong>hate</strong> other cats.</figcaption>  <!--Strong element makes something bolded.-->
+        </figure>
+      </section>
+      <section>
+        <h2>Cat Form</h2>
+        <form action="https://freecatphotoapp.com/submit-cat-photo"> <!--The action element tells the browser that the info inside the form should be sent to that url.-->
+          <fieldset> <!--Draws a related box around whatever is inside the element. These are block elements-->
+            <legend>Is your cat an indoor or outdoor cat?</legend> <!--Defines a caption for the fieldset element-->
+            <label><input id="indoor" type="radio" name="indoor-outdoor" value="indoor" checked> Indoor</label> <!--Radio buttons are when you want only one answer out of many. Also, adding a label makes it so that clicking the word also clicks the button-->
+            <label><input id="outdoor" type="radio" name="indoor-outdoor" value="outdoor"> Outdoor</label> <!--Id is like classes, to denote the element in CSS. To make it so that selecting one radio button automatically deselects the other, both buttons must have a name attribute with the same value.-->
+          </fieldset> <!--Form data for the button is based on its name and value attributes. You need a value attribute for multiple radio buttons. Good practice is setting the value equal to the id or class.-->
+          <fieldset>
+            <legend>What's your cat's personality?</legend>
+            <input id="loving" type="checkbox" name="personality" value="loving" checked> <label for="loving">Loving</label> <!--The label can also just be put around the text inside the input element. Make sure to include a for attribute that directs towards the id in the input.-->
+            <input id="lazy" type="checkbox" name="personality" value="lazy"> <label for="lazy">Lazy</label>
+            <input id="energetic" type="checkbox" name="personality" value="energetic"> <label for="energetic">Energetic</label>
+          </fieldset>
+          <input type="text" name="catphotourl" placeholder="cat photo URL" required> <!--In order for the form data to be accessed by the url in the action attribute in the form, each text field shall have a name attribute to describe the data being sent. Required is to prevent the user from submitting the form when required info is missing.-->
+          <button type="submit">Submit</button> <!--This button will submit the form to the location specified in the form's action attribute. This doesn't NEED to have a type="submit", but it makes it clear.-->
+        </form>
+      </section>
+    </main>
+    <footer> <!--The footer element allows you to put some text at the very bottom of the page. -->
+      <p>
+        No Copyright - <a href="https://www.freecodecamp.org">freeCodeCamp.org</a>
+      </p>
+    </footer>
+  </body>
+</html>
