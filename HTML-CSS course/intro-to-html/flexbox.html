@@ -1,0 +1,185 @@
+<!--A flex box is another way to construct a horizontal layout while maintaining alignment.
+
+In CSS grids, the container defines the width of the columns such that you can't swap around the elements without having
+to have a different width for each one as you swap them.
+In flex boxes, the elements inside the flex box define THEIR OWN width such that if you swap them around, the elements take
+their width with them. The conatiner just defines whether the elements will be in a row or column
+  A flex box will be a good idea when a grid changes i.e based on if you are logged in or out of Youtube.com.
+
+We add a style to the body of padding bottom so that the webpage is longer, and we can scroll down more.
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      flexbox practice
+    </title>
+    <style>
+
+    </style>
+  </head>
+  <body style="
+    padding-bottom: 1000px;
+  ">
+    <div style="
+      display: flex;
+      flex-direction: row;
+      
+      "> <!--This div here is the flex box-->
+      <div style="
+      background-color: lightblue;
+      ">div 1 text</div>
+      <div style="background-color: lightpink;">div 2 <p>taller</p></div>
+    </div>
+
+    <div style="
+      margin-top: 30px;
+      display: flex;
+      flex-direction: row;
+      
+      "> <!--This div here is the flex box-->
+      <div style="
+      background-color: lightblue;
+      width: 100px;
+      
+      ">100 px</div>
+      <div style="
+      background-color: lightpink;
+      flex: 1; 
+      ">flex 1</div> <!--flex: 1 is the 1fr equivalent to css grid layout stuff-->
+
+    </div>
+
+    <div style="
+      margin-top: 30px;
+      display: flex;
+      flex-direction: row;
+      
+      "> <!--This div here is the flex box-->
+      <div style="
+      background-color: lightblue;
+      flex: 1; 
+    ">flex 1</div> <!--flex: 1 is the 1fr equivalent to css grid layout stuff-->
+
+      <div style="
+        background-color: lightpink;
+        width: 100px;
+      
+      ">100 px</div>
+      
+      <div style="
+        background-color: lightblue;
+        flex: 2;
+  
+    ">flex 2</div> <!--this is like 2 fr;-->
+
+    </div>
+
+    <!--justify content determines how the elements are layed out horizontally. Here in this flex box we are having
+    set width for each element.
+    For this, it's center. It can be start for left side, end for right side.
+  
+  
+    -->
+    <div style="
+      margin-top: 30px;
+      height: 70px;
+      border: 1px solid grey;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    
+    "> <!--This div here is the flex box-->
+    <div style="
+      background-color: lightblue;
+      width: 100px; 
+  ">100 px</div> <!--flex: 1 is the 1fr equivalent to css grid layout stuff-->
+
+    <div style="
+      background-color: lightpink;
+      width: 100px;
+    
+    ">100 px</div>
+    
+    <div style="
+      background-color: lightblue;
+      width: 100px;
+
+  ">100 px</div> <!--this is like 2 fr;-->
+
+    </div>
+
+
+
+    <!--justify content determines how the elements are layed out horizontally. Here in this flex box we are having
+    set width for each element.
+    For this, it's space-between. This has one on the left, one in middle, and one on the right with equal space in between.
+  
+  
+    -->
+    <div style="
+      margin-top: 30px;
+      height: 70px;
+      border: 1px solid grey;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    
+    "> <!--This div here is the flex box-->
+    <div style="
+      background-color: lightblue;
+      width: 100px; 
+    ">100 px</div> <!--flex: 1 is the 1fr equivalent to css grid layout stuff-->
+
+    <div style="
+      background-color: lightpink;
+      width: 100px;
+    
+    ">100 px</div>
+    
+    <div style="
+      background-color: lightblue;
+      width: 100px;
+
+    ">100 px</div> <!--this is like 2 fr;-->
+
+    </div>
+
+
+    <!--align-items: stretch makes the elements stretch to fill the vertical space given by the set height of the flex box.
+    
+    We can do start, center, and end for this attribute too.-->
+    <div style="
+      margin-top: 30px;
+      height: 70px;
+      border: 1px solid grey;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    
+    "> <!--This div here is the flex box-->
+    <div style="
+      background-color: lightblue;
+      width: 100px; 
+    ">100 px</div> <!--flex: 1 is the 1fr equivalent to css grid layout stuff-->
+
+    <div style="
+      background-color: lightpink;
+      width: 100px;
+    
+    ">100 px</div>
+    
+    <div style="
+      background-color: lightblue;
+      width: 100px;
+
+    ">100 px</div> <!--this is like 2 fr;-->
+
+    </div>
+
+
+
+  </body>
+</html>
