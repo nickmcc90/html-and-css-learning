@@ -1,0 +1,156 @@
+<!--Timestamp: 3:43:51, about to do the exercise from 10e but we are going to recreate the entire thing and add a CSS grid.-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Recreating lesson 10 but with divs and grids and layouts</title>
+    <style>
+      
+      .css-grid {
+        display: grid;
+        grid-template-columns: 190px 190px 190px;
+        column-gap: 20px;
+      }
+      
+      p {
+        font-family: Arial;
+        margin-bottom: 0px;
+        margin-top: 0px;
+      }
+
+      .friend-display {
+        border: 0px solid white;
+        box-shadow: 0px 0px 6px rgba(0,0,0,0.4);
+        padding-bottom: 10px;
+      }
+
+      .top-of-display {
+        height: 200px;
+      }
+
+      .bottom-of-display {
+        padding-left: 6px;
+        padding-top: 10px;
+      }
+
+      .friend-profile {
+        width: 100%;
+        height: 100%
+      }
+
+      .friend-name {
+        font-weight: bold;
+        font-size: 18px;
+        margin-bottom: 5px;
+      }
+
+      .left-side-info {
+        display: inline-block;
+        width: 40px;
+        vertical-align: middle;
+      }
+
+      .right-side-info {
+        display: inline-block;
+        width: 1fr;
+        margin-left: 5px;
+      }
+
+      .user-profile {
+        width: 100%;
+        height: 40px;
+        border-radius: 60px;
+      }
+
+      .friend-count {
+        color: grey;
+        font-size: 15px;
+      }
+
+      .add-friend {
+        background-color: rgb(63, 63, 219);
+        color: white;
+        border-radius: 5px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 15px;
+        padding-right: 15px;
+        border: none;
+        display: block;
+        margin-top: 5px;
+      }
+
+    </style>
+  </head>
+  <body>
+
+    <div class="css-grid">
+      <div class="friend-display">
+        <div class="top-of-display">
+          <img class="friend-profile" src="cat.jpg">
+        </div>
+        <div class="bottom-of-display">
+          <p class="friend-name">
+            Oliver
+          </p>
+          <div class="left-side-info">
+            <img class="user-profile" src="elephant.jpg">
+          </div>
+          <div class="right-side-info">
+            <p class="friend-count">
+              2 mutual friends
+            </p>
+          </div>
+          <button class="add-friend">
+            Add Friend
+          </button>
+        </div>
+      </div>
+  
+      <div class="friend-display">
+        <div class="top-of-display">
+          <img class="friend-profile" src="dog.jpg">
+        </div>
+        <div class="bottom-of-display">
+          <p class="friend-name">
+            Doggy
+          </p>
+          <div class="left-side-info">
+            <img class="user-profile" src="elephant.jpg">
+          </div>
+          <div class="right-side-info">
+            <p class="friend-count">
+              3 mutual friends
+            </p>
+          </div>
+          <button class="add-friend">
+            Add Friend
+          </button>
+        </div>
+      </div>
+  
+      <div class="friend-display">
+        <div class="top-of-display">
+          <img class="friend-profile" src="anteater.jpg">
+        </div>
+        <div class="bottom-of-display">
+          <p class="friend-name">
+            Aunt Eater
+          </p>
+          <div class="left-side-info">
+            <img class="user-profile" src="elephant.jpg">
+          </div>
+          <div class="right-side-info">
+            <p class="friend-count">
+              17 mutual friends
+            </p>
+          </div>
+          <button class="add-friend">
+            Add Friend
+          </button>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>
