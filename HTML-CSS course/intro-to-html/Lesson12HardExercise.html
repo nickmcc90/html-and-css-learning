@@ -1,6 +1,8 @@
 <!--Right now, we have code for the 12e problem on 4:15:14 to be two vertical layouts combined together in a horizontal flexbox.
 For next time, we shall rewrite this code to make it three flexbox rows combined together to make a vertical flexbox.
 This should keep the blue notification and the text aligned.
+
+Did it!
 -->
 
 
@@ -11,21 +13,20 @@ This should keep the blue notification and the text aligned.
     <style>
       .main-flexbox {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: middle;
-        align-items: center;
-      }
-
-      .vert-flex-1 {
-        display: flex;
-        flex-direction: column;
+        width: 300px;
+        border: 1px solid white;
+        padding: 10px;
+        box-shadow: 0px 0px 4px rgba(0,0,0,0.4);
+        border-radius: 5px;
         row-gap: 10px;
       }
 
-      .vert-flex-2 {
+      .horiz-flex-1 {
         display: flex;
-        flex-direction: column;
-        row-gap: 10px;
+        flex-direction: row;
+        justify-content: space-between;
       }
 
       .Home,
@@ -41,10 +42,10 @@ This should keep the blue notification and the text aligned.
         text-align: center;
         border-radius: 20px;
         font-size: 16px;
-        padding-top: 2px;
-        padding-bottom: 2px;
-        padding-left: 7px;
-        padding-right: 7px;
+        padding-top: 4px;
+        padding-bottom: 4px;
+        padding-left: 10px;
+        padding-right: 10px;
       }
 
       p {
@@ -56,14 +57,16 @@ This should keep the blue notification and the text aligned.
   </head>
   <body>
     <div class="main-flexbox">
-      <div class="vert-flex-1">
+      <div class="horiz-flex-1">
         <p class="Home">Home</p>
-        <p class="Notifs">Notifications</p>
-        <p class="Messages">Messages</p>
-      </div>
-      <div class="vert-flex-2">
         <p class="notif-count">14</p>
+      </div>
+      <div class="horiz-flex-1">
+        <p class="Notifs">Notifications</p>
         <p class="notif-count">3</p>
+      </div>
+      <div class="horiz-flex-1">
+        <p class="Messages">Messages</p>
         <p class="notif-count">5</p>
       </div>
     </div>
