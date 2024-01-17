@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hard Lesson 12 additional exercise!</title>
+    <style>
+      p {
+        margin-top: 0px;
+        margin-bottom: 0px;
+        font-family: Arial;
+      }
+      
+      .main-friend-vert-flex {
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+      }
+
+      .horiz-tier-1 {
+        display: flex;
+        flex-direction: row;
+        height: 70px;
+        align-items: center;
+      }
+
+      .vert-tier-2 {
+        display: flex;
+        flex-direction: column;
+        margin-left: 15px;
+        width: 200px;
+        row-gap: 2px;
+      }
+
+      .name {
+        font-weight: bold;
+        font-size: 16px;
+        height: 20px;
+      }
+
+      .origin {
+        font-size: 16px;
+        color: grey;
+        height: 20px;
+      }
+
+      .popularity {
+        font-size: 15px;
+        color: grey;
+        height: 20px;
+      }
+
+      .follow {
+        width: 70px;
+        height: 35px;
+        background-color: rgb(6, 136, 180);
+        color: white;
+        font-weight: bold;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+      }
+
+      .image {
+        width: 60px;
+        height: 60px;
+        border-radius: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main-friend-vert-flex">
+
+      <div class="horiz-tier-1">
+        <img class="image" src="green-cat.jpg" alt="a green kitty">
+        <div class="vert-tier-2">
+          <p class="name">
+            oliver
+          </p>
+          <p class="origin">
+            the cat
+          </p>
+          <p class="popularity">
+            Popular
+          </p>
+        </div>
+        <button class="follow">
+          Follow
+        </button>
+      </div>
+      <div class="horiz-tier-1">
+        <img class="image" src="purple-cat.jpg" alt="a purple kitty">
+        <div class="vert-tier-2">
+          <p class="name">
+            Mimi
+          </p>
+          <p class="origin">
+            Sleepy Cat
+          </p>
+          <p class="popularity">
+            Popular
+          </p>
+        </div>
+        <button class="follow">
+          Follow
+        </button>
+      </div>
+      <div class="horiz-tier-1">
+        <img class="image" src="neon-cat.jpg" alt="a neon kitty">
+        <div class="vert-tier-2">
+          <p class="name">
+            Rex
+          </p>
+          <p class="origin">
+            Happy Bulldog
+          </p>
+          <p class="popularity">
+            Popular
+          </p>
+        </div>
+        <button class="follow">
+          Follow
+        </button>
+      </div>
+
+    </div>
+  </body>
+</html>
