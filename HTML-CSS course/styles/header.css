@@ -23,15 +23,29 @@
 
 .search-button {
   height: 40px;
-  width: 60px;
+  width: 66px;
+  background-color: rgb(240,240,240);
+  border: 1px solid rgb(192,192,192);
+  margin-left: -1px;
+  margin-right: 10px;
+}
+
+.search-icon {
+  height: 25px;
+  margin-top: 4px; /* We could have made the search button class a flex box and then align-items: center, but margin top is quicker and easier */
+
 }
 
 .search-bar {
   flex: 1;
-  height: 30px;
+  height: 36px;
   padding-left: 10px;
   font-size: 16px;
-  border: 1px solid grey;
+  border: 1px solid rgb(192,192,192);
+  border-radius: 2px;
+  box-shadow: inset 1px 2px 3px rgba(0,0,0,0.05); /* inset makes the shadow on the inside; horizontal pos, vertical pos, blur, hue*/
+  width: 0px; /* Makes search bar shrink as we minimize the page*/
+
 }
 
 .search-bar::placeholder {
@@ -42,6 +56,14 @@
 .voice-search-button {
   height: 40px;
   width: 40px;
+  border-radius: 20px;
+  border: none;
+  background-color: rgb(245,245,245);
+}
+
+.voice-search-icon {
+  height: 24px;
+  margin-top: 4px;
 }
 
 /* max-width limits the amount the search bar will grow when we resize the page. It can still go under the max-width though. */
@@ -56,6 +78,27 @@
 }
 
 .right-section {
-  background-color: lightblue;
-  width: 200px;
+  width: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-shrink: 0;
+}
+
+.upload-icon {
+  height: 24px;
+}
+
+.youtube-apps-icon {
+height: 24px;
+}
+
+.notifications-icon {
+  height: 24px;
+}
+
+.current-user-picture {
+  height: 32px;
+  border-radius: 16px;
+  margin-right: 20px;
 }
