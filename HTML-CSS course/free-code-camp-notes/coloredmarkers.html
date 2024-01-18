@@ -15,7 +15,38 @@
 
 
 
+red
+green
+blue
+yellow (all red and green)
+cyan (all blue and green)
+magenta (all red and blue)
+orange (all red half green)
+spring green (all green half blue)
+violet (half red all blue)
+charteuse green (half red all green)
+azure (half green all blue)
+rose (all red half blue)
+
+Hexadecimal colors (base 16 values) go from 1-9 then A-F, with 00 being the least and FF being the most.
+
+.blue {
+  background-color: hsl(240, 100%, 50%);      The CSS hsl function accepts 3 values: a number from 0 to 360 for hue, a percentage from 0 to 100 for saturation, and a percentage from 0 to 100 for lightness.
+
+If you imagine a color wheel, the hue red is at 0 degrees, green is at 120 degrees, and blue is at 240 degrees.
+Saturation is the intensity of a color from 0%, or gray, to 100% for pure color. You must add the percent sign % to the saturation and lightness values.
+Lightness is how bright a color appears, from 0%, or complete black, to 100%, complete white, with 50% being neutral.
+}
 
 
+
+#### Linear-gradient creates an image element, and is usually paired with the background property which can accept an image as a value.
+
+background: linear-gradient(gradientDirection, color1, color2) # colors can be rgb, hsl, hex, keywords
+
+
+.red {
+  background: linear-gradient(90deg, rgb(255, 0, 0) 75%, rgb(0, 255, 0), rgb(0, 0, 255)); # color stops are percentages after the color argument that dictate where the color stops on the image.
+}
 
 -->
