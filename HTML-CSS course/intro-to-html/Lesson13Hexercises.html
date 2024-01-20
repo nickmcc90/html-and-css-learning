@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Pretty hard lesson 13 exercise!</title>
+    <style>
+      .main-div {
+        width: 500px;
+        height: 195px;
+        font-family: Arial;
+      }
+
+      .user-appearance {
+        height: 75px;
+        display: flex;
+        align-items: center;
+      }
+
+      .profile-appearance {
+        margin-left: 10px;
+        width: 90px;
+      }
+
+      .user-profile {
+        width: 100%;
+        height: 60px;
+        border-radius: 30px;
+      }
+
+      .profile-main-text {
+        padding-left: 10px;
+        font-size: 17px;
+      }
+
+      span {
+        color: grey;
+      }
+
+      .at-symbol-profile {
+        line-height: 26px;
+      }
+
+      .profile-verbage {
+        line-height: 22px;
+      }
+
+      .user-upload {
+        height: 120px;
+        display: flex;
+        align-items: center;
+      }
+
+      .surrounding-upload-box {
+        border: 1px solid rgb(200, 200, 200);
+        margin-left: 87px;
+        height: 90px;
+        border-radius: 18px;
+        display: flex;
+        align-items: center;
+        width: 365px;
+      }
+
+      .grey-box {
+        background-color: rgb(200, 200, 200);
+        width: 40%;
+        height: 100%;
+        border-radius: 14px;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+      }
+
+      .upload-text {
+        padding-left: 15px;
+        line-height: 22px;
+      }
+
+      .upload-website {
+        color: rgb(84, 84, 84);
+      }
+
+    </style>
+    <!--We can target all span elements here in this case because we don't have other specific span elements. Best practice is to give each span a class name and style it from there.-->
+  </head>
+  <body>
+    <div class="main-div">
+      <div class="user-appearance">
+        <div class="profile-appearance">
+          <img class="user-profile" src="cat.jpg" alt="a lil kitty cat">
+        </div>
+        <div class="profile-main-text">
+          <div class="at-symbol-profile"><strong>supersimple.dev</strong>  <span>@SuperSimpleDev</span></div>
+          <div class="profile-verbage">What is backend web development? A complete overview. New video is up!</div>
+        </div>
+      </div>
+      <div class="user-upload">
+        <div class="surrounding-upload-box">
+          <div class="grey-box"><!--grey box here--></div>
+          <div class="upload-text">
+            <div class="upload-website">youtube.com</div>
+            <div>Backend web development - a complete overview (2021)</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
