@@ -1,3 +1,6 @@
+<!--The first exercise was to make only one message with Chewy Promotions. The next step to this exercise was
+to make the overall inbox larger and put two more message things in there "all-bottom-halves"-->
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -6,19 +9,21 @@
       p {
         margin: 0px 0px;
         font-family: Arial;
+        font-size: 16px;        
       }
       
       .main-train-div {
         border: 1px solid rgba(192,192,192,0.5);
-        width: 400px;
+        width: 365px;
         box-shadow: 0px 0px 6px rgba(192,192,192,0.5);
         border-radius: 5px;
         padding-left: 12px;
+        height: 290px;
       }
 
       .all-inbox {
         height: 40px;
-        background-color: lightpink;
+        margin-bottom: -5px;
       }
 
       .inbox {
@@ -29,21 +34,51 @@
 
       .all-bottom-half {
         height: 75px;
-        background-color: lightblue;
         display: flex;
         align-items: center;
       }
 
       .profile-pic {
-        width: 50px;
+        width: 45px;
 
       }
       
       .cat {
         width: 100%;
-        height: 50px;
-        border-radius: 25px;
+        height: 40px;
+        border-radius: 20px;
       }
+
+      .message-info {
+        margin-left: 7px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        row-gap: 2px;
+      }
+
+      .title-time-combo {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .title {
+        width: 150px
+      }
+
+      .time {
+        font-size: 13px;
+        color: grey;
+        margin-right: 15px;
+        
+      }
+
+      .text {
+        font-size: 14px;
+        color: grey;
+      }
+
+
     </style>
   </head>
   <body>
@@ -57,13 +92,42 @@
         </div>
         <div class="message-info">
           <div class="title-time-combo">
-            <p class="title">Chewy Promotions</p>
+            <p class="title"><strong>Chewy Promotions</strong></p>
             <p class="time">4:58 PM</p>
           </div>
-          <p class="heading">Biggest sales of the year!</p>
+          <p class="heading"><strong>Biggest sales of the year!</strong></p>
           <p class="text">Hey there! We're writing to tell you about our...</p>
         </div>
       </div>
+
+      <div class="all-bottom-half">
+        <div class="profile-pic">
+          <img class="cat" src="oswald.jpg" alt="a big blue octopus">
+        </div>
+        <div class="message-info">
+          <div class="title-time-combo">
+            <p class="title"><strong>Best Buy</strong></p>
+            <p class="time">12:32 PM</p>
+          </div>
+          <p class="heading"><strong>Your Best Buy eReceipt</strong></p>
+          <p class="text">Thank you for shopping at Best Buy, here is...</p>
+        </div>
+      </div>
+
+      <div class="all-bottom-half">
+        <div class="profile-pic">
+          <img class="cat" src="purple-cat.jpg" alt="a picture of a neon cat">
+        </div>
+        <div class="message-info">
+          <div class="title-time-combo">
+            <p class="title"><strong>Netflix</strong></p>
+            <p class="time">9:00 AM</p>
+          </div>
+          <p class="heading"><strong>Here's what's coming soon to Netflix</strong></p>
+          <p class="text">Brand new movies and shows, old favorites...</p>
+        </div>
+      </div>
+
     </div>
   </body>
 </html>
