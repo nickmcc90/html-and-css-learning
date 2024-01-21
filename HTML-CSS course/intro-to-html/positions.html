@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>positions lesson 14 training</title>
+  </head>
+  <body style="
+    height: 3000px;
+    padding-top: 60px;
+    padding-left: 82px;
+  ">
+  <!--the default is position: static. With position: fixed, we can adjust how far it is from the top, bottom, left, etc. from the edges of the screen. Don't include a bottom measurement, but instead a height measurement so that your div doesn't resize when the window is minimized.-->
+  <!--put padding on the body of the page to have the position: fixed stuff outta the way.-->
+    <div style="
+      background-color: black;
+      color: white;
+      position: fixed;
+      top: 0px;
+      left: 0px;
+      right: 0px;
+      height: 50px;
+      
+      ">header</div>
+
+    <div style="
+      background-color: green;
+      color: white;
+      position: fixed;
+      bottom: 0px;
+      left: 0px;
+      top: 50px;
+      width: 72px
+    
+    ">sidebar</div>
+    <div style="
+      background-color: lightblue;
+      height: 200px;
+      width: 200px;
+      position: static;
+    
+    ">div 1</div>
+    <div style="
+      background-color: lightpink;
+      height: 200px;
+      width: 200px;
+    
+    ">div 2</div>
+  </body>
+</html>
