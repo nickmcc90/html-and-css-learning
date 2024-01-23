@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Top banner for lesson 14</title>
+    <style>
+      body {
+        height: 3000px;
+      }
+
+      button {
+        font-family: Helvetica;
+        font-size: 13px;
+        font-weight: 600;
+      }
+
+      .banner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+      }
+
+      .left-side {
+        display: flex;
+        align-items: center;
+        width: 250px;
+
+      }
+
+      .totally-nick {
+        width: 40px;
+        height: 40px;
+        border-radius: 20px;
+      }
+
+      .nicholas {
+        padding-left: 10px;
+        font-family: Helvetica;
+        font-weight: bold;
+      }
+
+      .health-box {
+        height: 20px;
+        width: 300px;
+        border: 5px solid rgb(0, 190, 0);
+        text-align: right;
+        display: flex;
+
+      }
+
+      .health-fill {
+        width: 60%;
+        background-color: red;
+        height: 20px;
+      }
+
+      .health-not-fill {
+        width: 40%;
+        background-color: rgb(57, 57, 57);
+        height: 20px;
+      }
+
+      .middle-stuff {
+        display: flex;
+        align-items: center;
+        width: 300px;
+      }
+
+      .inside-heart {
+        width: 70px;
+        height: 50px;
+
+      }
+
+      .right-side {
+        width: 250px;
+        text-align: right;
+      }
+
+      .friend {
+        background-color: rgb(44, 44, 253);
+        color: white;
+        padding: 8px 15px;
+        border-radius: 5px;
+        border: none;
+      }
+
+      .message {
+        background-color: rgb(186, 186, 186);
+        padding: 8px 15px;
+        border-radius: 5px;
+        border: none;
+
+      }
+    </style>
+  </head>
+  <body>
+    <div class="banner">
+      <div class="left-side">
+        <img class='totally-nick' src="mickey-mouse.jpg" alt="this is Nick, not a mouse">
+        <div class="nicholas">Nick's health bar</div>
+      </div>
+      <div class="middle-stuff">
+        <div class="heart">
+          <img class="inside-heart" src="purple-heart.jpg" alt="nick's heart">
+        </div>
+        <div class="health-box">
+          <div class="health-fill"></div>
+          <div class="health-not-fill"></div>
+        </div>
+      </div>
+      <div class="right-side">
+        <button class="friend">Add Friend</button>
+        <button class="message">Message</button>
+      </div>
+    </div>
+  </body>
+</html>
