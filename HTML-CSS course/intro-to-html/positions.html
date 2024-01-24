@@ -18,6 +18,7 @@
       left: 0px;
       right: 0px;
       height: 50px;
+      z-index: 1;
       
       ">header</div>
 
@@ -30,7 +31,34 @@
       top: 50px;
       width: 72px
     
-    ">sidebar</div>
+    ">sidebar
+    
+    <div style="
+    position: absolute;
+    background-color: red;
+    color: white;
+    top: 0px;
+    right: 0px;
+    z-index: 2;
+  ">
+    X
+  </div>
+<!--Above here, we put a position: absolute div inside of a position: fixed div. This will have the abs. div placed in regards to the fixed div.-->
+    <!--This is useful if we want an "X" button to close out a side bar.-->
+    <!--so we can position: absolute a div in a position: fixed to get it relative, or we can position: absolute a div in a position: relative div to have the abs div be relative in the pos: relative div, and still have the relative move on the page.-->
+    </div>
+
+    <div style="
+      position: absolute;
+      background-color: red;
+      color: white;
+      top: 60px;
+      right: 10px;
+      z-index: 2;
+    ">
+      absolute
+    </div>
+
     <div style="
       background-color: lightblue;
       height: 200px;
@@ -42,7 +70,21 @@
       background-color: lightpink;
       height: 200px;
       width: 200px;
+      position: relative;
     
-    ">div 2</div>
+    ">div 2
+    
+    <div style="
+    position: absolute;
+    background-color: black;
+    color: white;
+    bottom: 10px;
+    right: 10px;
+    z-index: 2;
+  ">
+    5:00
+  </div>
+  
+    </div>
   </body>
 </html>
