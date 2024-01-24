@@ -6,23 +6,85 @@
   <head>
     <title>Discord banner lesson 14 exercises</title>
     <style>
+      body {
+        height: 3000px;
+      }
 
+      .sidebar-1 {
+        position: fixed;
+        display: flex;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        flex-direction: column;
+        row-gap: 5px;
+        align-items: center;
+        width: 90px;
+        background-color: rgb(51, 51, 51);
+        padding-top: 15px;
+      }
+
+      .sidebar-2 {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 90px;
+        width: 200px;
+        background-color: rgb(90, 90, 90);
+        display: flex;
+        flex-direction: column;
+        row-gap: 15px;
+        padding: 15px 15px;
+      }
+
+      .image {
+        height: 60px;
+        width: 60px;
+        border-radius: 30px;
+      }
+
+      .horizontal {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .info {
+        color: white;
+        font-family: Arial;
+        font-size: 14px;
+        font-weight: bold;
+      }
+
+      .plus {
+        color: rgb(156, 156, 156);
+        font-size: 30px;
+        font-weight: bold;
+      }
+
+      .discord-text {
+        color: rgb(156, 156, 156);
+        font-family: Arial;
+      }
+      span {
+        margin-right: 5px;
+      }
     </style>
   </head>
   <body>
     <div class="sidebar-1">
-      <img src="" alt="">
-      <img src="" alt="">
-      <img src="" alt="">
+      <img class='image' src="cat.jpg" alt="normal cat">
+      <img class='image' src="neon-cat.jpg" alt="neon cat">
+      <img class='image' src="purple-cat.jpg" alt="purple cat here">
     </div>
     <div class="sidebar-2">
       <div class="horizontal">
-        <div>INFO</div>
-        <div>+</div>
+        <div class="info">INFO</div>
+        <div class="plus">+</div>
       </div>
-      <div><span>#</span> new-videos</div>
-      <div><span>#</span> updates</div>
-      <div><span>#</span> faq</div>
+      <div class="discord-text"><span>#</span> new-videos</div>
+      <div class="discord-text"><span>#</span> updates</div>
+      <div class="discord-text"><span>#</span> faq</div>
     </div>
   </body>
 </html>
