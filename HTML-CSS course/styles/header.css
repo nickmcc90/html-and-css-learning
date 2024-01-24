@@ -8,6 +8,7 @@
   top: 0px;
   left: 0px;
   right: 0px;
+  z-index: 100;
 
   background-color: white;
 
@@ -104,6 +105,21 @@ height: 24px;
 
 .notifications-icon {
   height: 24px;
+}
+
+.notifications-icon-container {
+  position: relative;
+}
+
+.notifications-count {
+  position: absolute;
+  background-color: red;
+  padding: 4px 4px;
+  border-radius: 2px;
+  color: white;
+  top: 0;
+  right: 0;
+  font-family: Roboto, Arial;
 }
 
 .current-user-picture {
