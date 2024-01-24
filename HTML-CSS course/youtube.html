@@ -20,6 +20,17 @@ timestamp: 4:29:19 we are about to modify the search bar
 timestamp: 4:44:22 we are about to do lesson 13 exercises
 
 about to learn about css positioning lesson 14
+
+
+CSS: Position absolute and relative!!!
+->> position: static is the default. This will always show up behind position: fixed elements.
+As soon as an element is position: relative or absolute or something, the element that was written last will
+show in front of the other element. A position: relative element written after a position: fixed element will
+show above that fixed element, which we don't want. We give the position: fixed element a higher order of
+z-index.
+
+
+Timestamp: 5:30:29, doing the notifications count icon sizing it and making it red.
 -->
 
 <!DOCTYPE html>
@@ -55,7 +66,10 @@ about to learn about css positioning lesson 14
       <div class="right-section">
         <img class="upload-icon" src="icons/upload.svg">
         <img class="youtube-apps-icon" src="icons/youtube-apps.svg">
-        <img class="notifications-icon" src="icons/notifications.svg">
+        <div class="notifications-icon-container">
+          <img class="notifications-icon" src="icons/notifications.svg">
+          <div class="notifications-count">3</div>
+        </div>
         <img class="current-user-picture" src="channel-pictures/my-channel.jpeg">
       </div>
     </div>
@@ -69,6 +83,7 @@ about to learn about css positioning lesson 14
 
         <div class="thumbnail-row"> <!--entire first vertical layout thumbnail-->
           <img class="thumbnail" src="thumbnails/thumbnail-1.webp">
+          <div class="video-time">14:20</div>
         </div>
         <div class="video-info-grid"> <!--entire first vertical layout everything below thumb-->
   
@@ -94,6 +109,7 @@ about to learn about css positioning lesson 14
   
         <div class="thumbnail-row"> <!--entire first vertical layout thumbnail-->
           <img class="thumbnail" src="thumbnails/thumbnail-2.webp">
+          <div class="video-time">8:22</div>
         </div>
         <div class="video-info-grid"> <!--entire first vertical layout everything below thumb-->
   
@@ -120,6 +136,7 @@ about to learn about css positioning lesson 14
   
         <div class="thumbnail-row"> <!--entire first vertical layout thumbnail-->
           <img class="thumbnail" src="thumbnails/thumbnail-3.webp">
+          <div class="video-time">9:13</div>
         </div>
         <div class="video-info-grid"> <!--entire first vertical layout everything below thumb-->
   
@@ -145,6 +162,7 @@ about to learn about css positioning lesson 14
   
         <div class="thumbnail-row"> <!--entire first vertical layout thumbnail-->
           <img class="thumbnail" src="thumbnails/thumbnail-4.webp">
+          <div class="video-time">22:09</div>
         </div>
         <div class="video-info-grid"> <!--entire first vertical layout everything below thumb-->
   
@@ -170,6 +188,7 @@ about to learn about css positioning lesson 14
   
         <div class="thumbnail-row"> <!--entire first vertical layout thumbnail-->
           <img class="thumbnail" src="thumbnails/thumbnail-5.webp">
+          <div class="video-time">11:17</div>
         </div>
         <div class="video-info-grid"> <!--entire first vertical layout everything below thumb-->
   
@@ -195,6 +214,7 @@ about to learn about css positioning lesson 14
   
         <div class="thumbnail-row"> <!--entire first vertical layout thumbnail-->
           <img class="thumbnail" src="thumbnails/thumbnail-6.webp">
+          <div class="video-time">19:59</div>
         </div>
         <div class="video-info-grid"> <!--entire first vertical layout everything below thumb-->
   
