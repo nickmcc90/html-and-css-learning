@@ -111,15 +111,20 @@ height: 24px;
   position: relative;
 }
 
+/* If you are at the top right like with the notif icon,
+you can do negative top and right for position: absolute 
+to go farther. */
+
 .notifications-count {
   position: absolute;
-  background-color: red;
-  padding: 4px 4px;
-  border-radius: 2px;
+  background-color: rgb(205, 0, 0);
+  padding: 2px 5px;
+  border-radius: 10px;
   color: white;
-  top: 0;
-  right: 0;
+  top: -2px;
+  right: -5px;
   font-family: Roboto, Arial;
+  font-size: 11px;
 }
 
 .current-user-picture {
