@@ -33,17 +33,14 @@
   margin-bottom: 10px;
 }
 
+.video-title .video-link {
+  color: black;
+  text-decoration: none;
+}
+
 .video-info-grid {
   display: grid;
   grid-template-columns: 50px 1fr;
-}
-
-.channel-picture {
-
-}
-
-.video-info {
-
 }
 
 .profile-picture {
