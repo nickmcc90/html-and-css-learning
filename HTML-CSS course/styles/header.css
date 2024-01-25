@@ -38,6 +38,36 @@
   border: 1px solid rgb(192,192,192);
   margin-left: -1px;
   margin-right: 10px;
+  
+
+}
+
+.search-button,
+.voice-search-button {
+  position: relative;
+
+}
+
+
+/* This targets all .tooltips in .search-button */
+.voice-search-button .tooltip,
+.search-button .tooltip {
+  position: absolute;
+  background-color: gray;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 2px;
+  font-size: 12px;
+  bottom: -30px;
+  opacity: 0;
+  transition: opacity 0.15s;
+  pointer-events: none;
+}
+/* Making pointer-events: none doesn't let the tooltip be accessed without first hovering over the search button. */
+
+/* styles that only target the tooltips in search button when the search button is hovered over */
+.search-button:hover .tooltip {
+  opacity: 1;
 }
 
 .search-icon {
