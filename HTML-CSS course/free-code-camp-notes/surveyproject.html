@@ -1,4 +1,8 @@
-<!--starting our own form project-->
+<!--starting our own form project
+
+
+I've done numbers 1 through almost 12 so far.
+-->
 
 <!DOCTYPE html>
 <html lang='en'>
@@ -14,13 +18,28 @@
     }
     .caption {
       margin: 5px 5px;
-
     }
   </style>
 </head>
 <body>
   <h1>Nick's MusicalMaker Survey Form</h1>
   <p class='caption'>Thank you for using our service, we hope to get feedback from you!</p>
+  <form>
+    <fieldset>
+      <label id="name-label"><input required id='name' type="text" placeholder="Type name"></label>
+      <label id="email-label"><input required id='email' type="email" placeholder="Type email"></label>
+      <label id="number-label"><input id='number' type="number" min="13" max="120" pattern="0-9" placeholder="Type age"></label>
+      <label><input id='dropdown' type="select"></label>
+    </fieldset>
+    <fieldset></fieldset>
+    <fieldset></fieldset>
+    <fieldset></fieldset>
+    <fieldset></fieldset>
+    <fieldset></fieldset>
+    <input id="submit">
+  </form>
+
+
 </body>
   
   
