@@ -25,10 +25,12 @@
   height: 24px;
   margin-left: 24px;
   margin-right: 20px;
+  cursor: pointer;
 }
 
 .youtube-logo {
   height: 20px;
+  cursor: pointer;
 }
 
 .search-button {
@@ -42,16 +44,27 @@
 
 }
 
+.notifications-icon-container,
+.upload-icon-container,
 .search-button,
-.voice-search-button {
+.voice-search-button,
+.youtube-apps-icon-container {
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
 
 }
 
 
 /* This targets all .tooltips in .search-button */
+.notifications-icon-container .tooltip,
+.upload-icon-container .tooltip,
 .voice-search-button .tooltip,
-.search-button .tooltip {
+.search-button .tooltip,
+.youtube-apps-icon-container .tooltip {
+  font-family: Roboto, Arial;
   position: absolute;
   background-color: gray;
   color: white;
@@ -62,17 +75,23 @@
   opacity: 0;
   transition: opacity 0.15s;
   pointer-events: none;
+  white-space: nowrap;
 }
 /* Making pointer-events: none doesn't let the tooltip be accessed without first hovering over the search button. */
+/* White space no wrap prevents text from making many lines. It'll just be one good line of text.*/
 
 /* styles that only target the tooltips in search button when the search button is hovered over */
-.search-button:hover .tooltip {
+.notifications-icon-container:hover .tooltip,
+.upload-icon-container:hover .tooltip,
+.search-button:hover .tooltip,
+.voice-search-button:hover .tooltip,
+.youtube-apps-icon-container:hover .tooltip {
   opacity: 1;
 }
 
 .search-icon {
   height: 25px;
-  margin-top: 4px; /* We could have made the search button class a flex box and then align-items: center, but margin top is quicker and easier */
+  /* (THIS TEXT IS OLD) We could have made the search button class a flex box and then align-items: center, but margin top is quicker and easier */
 
 }
 
@@ -129,16 +148,13 @@
   height: 24px;
 }
 
+
 .youtube-apps-icon {
 height: 24px;
 }
 
 .notifications-icon {
   height: 24px;
-}
-
-.notifications-icon-container {
-  position: relative;
 }
 
 /* If you are at the top right like with the notif icon,
@@ -161,4 +177,5 @@ to go farther. */
   height: 32px;
   border-radius: 16px;
   margin-right: 20px;
+  cursor: pointer;
 }
