@@ -36,6 +36,8 @@ Lesson 16 is finishing the youtube.com project:
 - finish the side bar, tool tips when hovering over icons, and resizing the videos.
 
 Timestamp: 5:38:46, inspect element on the icons in the sidebar on youtube.com; save them to icons folder.
+
+Timestamp: 6:02:20 about to add :hover to voice search button
 -->
 
 <!DOCTYPE html>
@@ -63,9 +65,11 @@ Timestamp: 5:38:46, inspect element on the icons in the sidebar on youtube.com; 
         <input class="search-bar" type="text" placeholder="Search">
         <button class="search-button">
           <img class="search-icon" src="icons/search.svg">
+          <div class="tooltip">Search</div>
         </button>
         <button class="voice-search-button">
           <img class="voice-search-icon" src="icons/voice-search-icon.svg">
+          <div class="tooltip">Search with your voice</div>
         </button>
       </div>
       <div class="right-section">
@@ -80,12 +84,30 @@ Timestamp: 5:38:46, inspect element on the icons in the sidebar on youtube.com; 
     </div>
 
     <div class="sidebar">
-      <div class="sidebar-link"></div>
-      <div class="sidebar-link"></div>
-      <div class="sidebar-link"></div>
-      <div class="sidebar-link"></div>
-      <div class="sidebar-link"></div>
-      <div class="sidebar-link"></div>
+      <div class="sidebar-link">
+        <img src="icons/home-ico.svg">
+        <div>Home</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/explore-icon.svg">
+        <div>Explore</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/subscriptions-icon.svg">
+        <div>Subscriptions</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/originals-icon.svg">
+        <div>Originals</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/youtube-music-icon.svg">
+        <div>YouTube Music</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/library-icon.svg">
+        <div>Library</div>
+      </div>
     </div>
     
     <div class="video-grid">
