@@ -38,6 +38,8 @@ Lesson 16 is finishing the youtube.com project:
 Timestamp: 5:38:46, inspect element on the icons in the sidebar on youtube.com; save them to icons folder.
 
 Timestamp: 6:02:20 about to add :hover to voice search button
+
+Timestamp: 6:07:38 lesson 16 finale exercise project. Going to add a complicated tooltip to the channel profile!!!
 -->
 
 <!DOCTYPE html>
@@ -73,11 +75,18 @@ Timestamp: 6:02:20 about to add :hover to voice search button
         </button>
       </div>
       <div class="right-section">
-        <img class="upload-icon" src="icons/upload.svg">
-        <img class="youtube-apps-icon" src="icons/youtube-apps.svg">
+        <div class="upload-icon-container">
+          <img class="upload-icon" src="icons/upload.svg">
+          <div class="tooltip">Create</div>
+        </div>
+        <div class="youtube-apps-icon-container">
+          <img class="youtube-apps-icon" src="icons/youtube-apps.svg">
+          <div class="tooltip">Youtube Apps</div>
+        </div>
         <div class="notifications-icon-container">
           <img class="notifications-icon" src="icons/notifications.svg">
           <div class="notifications-count">3</div>
+          <div class="tooltip">Notifications</div>
         </div>
         <img class="current-user-picture" src="channel-pictures/my-channel.jpeg">
       </div>
@@ -114,17 +123,21 @@ Timestamp: 6:02:20 about to add :hover to voice search button
       <div class="video-preview"> <!--Entire video preview -->
 
         <div class="thumbnail-row"> <!--entire first vertical layout thumbnail-->
-          <img class="thumbnail" src="thumbnails/thumbnail-1.webp">
+          <a href="https://www.youtube.com/watch?v=n2RNcPRtAiY">
+            <img class="thumbnail" src="thumbnails/thumbnail-1.webp">
+          </a>
           <div class="video-time">14:20</div>
         </div>
         <div class="video-info-grid"> <!--entire first vertical layout everything below thumb-->
   
           <div class="channel-picture"> <!--entire second horizontal layout channel image-->
-            <img class="profile-picture" src="channel-pictures/channel-1.jpeg">
+            <a href="https://www.youtube.com/c/mkbhd">
+              <img class="profile-picture" src="channel-pictures/channel-1.jpeg">
+            </a>
           </div>
           <div class="video-info"> <!--entire second horizontal layout text to side of channel image-->
             <p class="video-title">
-              Talking Tech and AI with Google CEO Sundar Pichai!
+              <a class="video-link" href="https://www.youtube.com/watch?v=n2RNcPRtAiY">Talking Tech and AI with Google CEO Sundar Pichai!</a>
             </p>
             <p class="video-author">
               Marques Brownlee
@@ -136,21 +149,25 @@ Timestamp: 6:02:20 about to add :hover to voice search button
         </div>
   
       </div>
-  
+
       <div class="video-preview"> <!--Entire video preview -->
   
         <div class="thumbnail-row"> <!--entire first vertical layout thumbnail-->
-          <img class="thumbnail" src="thumbnails/thumbnail-2.webp">
+          <a href="https://www.youtube.com/watch?v=mP0RAo9SKZk">
+            <img class="thumbnail" src="thumbnails/thumbnail-2.webp">
+          </a>
           <div class="video-time">8:22</div>
         </div>
         <div class="video-info-grid"> <!--entire first vertical layout everything below thumb-->
   
           <div class="channel-picture"> <!--entire second horizontal layout channel image-->
-            <img class="profile-picture" src="channel-pictures/channel-2.jpeg">
+            <a href="https://www.youtube.com/c/markiplier">
+              <img class="profile-picture" src="channel-pictures/channel-2.jpeg">
+            </a>
           </div>
           <div class="video-info"> <!--entire second horizontal layout text to side of channel image-->
             <p class="video-title">
-              Try Not To Laugh Challenge #9
+              <a class="video-link" href="https://www.youtube.com/watch?v=mP0RAo9SKZk">Try Not To Laugh Challenge #9</a>
             </p>
             <p class="video-author">
               Markiplier
@@ -162,22 +179,25 @@ Timestamp: 6:02:20 about to add :hover to voice search button
         </div>
   
       </div>
-  
-      
+
       <div class="video-preview"> <!--Entire video preview -->
   
         <div class="thumbnail-row"> <!--entire first vertical layout thumbnail-->
-          <img class="thumbnail" src="thumbnails/thumbnail-3.webp">
+          <a href="https://www.youtube.com/watch?v=FgjPQQeTh1w">
+            <img class="thumbnail" src="thumbnails/thumbnail-3.webp">
+          </a>
           <div class="video-time">9:13</div>
         </div>
         <div class="video-info-grid"> <!--entire first vertical layout everything below thumb-->
   
           <div class="channel-picture"> <!--entire second horizontal layout channel image-->
-            <img class="profile-picture" src="channel-pictures/channel-3.jpeg">
+            <a href="https://www.youtube.com/user/SSSniperWolf">
+              <img class="profile-picture" src="channel-pictures/channel-3.jpeg">
+            </a>
           </div>
           <div class="video-info"> <!--entire second horizontal layout text to side of channel image-->
             <p class="video-title">
-              Crazy Tik Toks Taken Moments Before DISASTER
+              <a class="video-link" href="https://www.youtube.com/watch?v=FgjPQQeTh1w">Crazy Tik Toks Taken Moments Before DISASTER</a>
             </p>
             <p class="video-author">
               SSSniperWolf
@@ -193,17 +213,21 @@ Timestamp: 6:02:20 about to add :hover to voice search button
       <div class="video-preview"> <!--Entire video preview -->
   
         <div class="thumbnail-row"> <!--entire first vertical layout thumbnail-->
-          <img class="thumbnail" src="thumbnails/thumbnail-4.webp">
+          <a href="https://www.youtube.com/watch?v=094y1Z2wpJg">
+            <img class="thumbnail" src="thumbnails/thumbnail-4.webp">
+          </a>
           <div class="video-time">22:09</div>
         </div>
         <div class="video-info-grid"> <!--entire first vertical layout everything below thumb-->
   
           <div class="channel-picture"> <!--entire second horizontal layout channel image-->
-            <img class="profile-picture" src="channel-pictures/channel-4.jpeg">
+            <a href="https://www.youtube.com/c/veritasium">
+              <img class="profile-picture" src="channel-pictures/channel-4.jpeg">
+            </a>
           </div>
           <div class="video-info"> <!--entire second horizontal layout text to side of channel image-->
             <p class="video-title">
-              The Simplest Math Problem No One Can Solve - Collatz Conjecture
+              <a class="video-link" href="https://www.youtube.com/watch?v=094y1Z2wpJg">The Simplest Math Problem No One Can Solve - Collatz Conjecture</a>
             </p>
             <p class="video-author">
               Veritasium
@@ -219,17 +243,21 @@ Timestamp: 6:02:20 about to add :hover to voice search button
       <div class="video-preview"> <!--Entire video preview -->
   
         <div class="thumbnail-row"> <!--entire first vertical layout thumbnail-->
-          <img class="thumbnail" src="thumbnails/thumbnail-5.webp">
+          <a href="https://www.youtube.com/watch?v=86CQq3pKSUw">
+            <img class="thumbnail" src="thumbnails/thumbnail-5.webp">
+          </a>
           <div class="video-time">11:17</div>
         </div>
         <div class="video-info-grid"> <!--entire first vertical layout everything below thumb-->
   
           <div class="channel-picture"> <!--entire second horizontal layout channel image-->
-            <img class="profile-picture" src="channel-pictures/channel-5.jpeg">
+            <a href="https://www.youtube.com/c/CSDojo">
+              <img class="profile-picture" src="channel-pictures/channel-5.jpeg">
+            </a>
           </div>
           <div class="video-info"> <!--entire second horizontal layout text to side of channel image-->
             <p class="video-title">
-              Kadane's Algorithm to Maximum Sum Subarray Problem
+              <a class="video-link" href="https://www.youtube.com/watch?v=86CQq3pKSUw">Kadane's Algorithm to Maximum Sum Subarray Problem</a>
             </p>
             <p class="video-author">
               CS Dojo
@@ -245,17 +273,21 @@ Timestamp: 6:02:20 about to add :hover to voice search button
       <div class="video-preview"> <!--Entire video preview -->
   
         <div class="thumbnail-row"> <!--entire first vertical layout thumbnail-->
-          <img class="thumbnail" src="thumbnails/thumbnail-6.webp">
+          <a href="https://www.youtube.com/watch?v=yXWw0_UfSFg">
+            <img class="thumbnail" src="thumbnails/thumbnail-6.webp">
+          </a>
           <div class="video-time">19:59</div>
         </div>
         <div class="video-info-grid"> <!--entire first vertical layout everything below thumb-->
   
           <div class="channel-picture"> <!--entire second horizontal layout channel image-->
-            <img class="profile-picture" src="channel-pictures/channel-6.jpeg">
+            <a href="https://www.youtube.com/channel/UCX6OQ3DkcsbYNE6H8uQQuVA">
+              <img class="profile-picture" src="channel-pictures/channel-6.jpeg">
+            </a>
           </div>
           <div class="video-info"> <!--entire second horizontal layout text to side of channel image-->
             <p class="video-title">
-              Anything You Can Fit In The Circle I’ll Pay For
+              <a class="video-link" href="https://www.youtube.com/watch?v=yXWw0_UfSFg">Anything You Can Fit In The Circle I&#39ll Pay For</a> <!--this is apostrophe code-->
             </p>
             <p class="video-author">
               MrBeast
@@ -265,7 +297,7 @@ Timestamp: 6:02:20 about to add :hover to voice search button
             </p>
           </div>
         </div>
-  
+
       </div>
     </div>
 
