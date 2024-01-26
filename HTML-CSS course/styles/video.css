@@ -80,13 +80,26 @@
 }
 
 @media (min-width: 751px) and (max-width: 999px) {
-  
+  .video-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
 /* activates if screen is bigger than 1000px */
+/* Increase the font-size and line-height when the page is > 1000px wide */
 @media (min-width: 1000px) {
   .video-grid {
     grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  .video-title {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .video-author,
+  .video-stats {
+    font-size: 14px;
   }
 }
 
