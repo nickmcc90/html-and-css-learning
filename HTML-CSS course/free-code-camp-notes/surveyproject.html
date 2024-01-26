@@ -9,34 +9,69 @@ I've done numbers 1 through almost 12 so far.
 <head>
   <style>
     body {
-      width: 1000px;
+      padding: 30px 300px;
     }
 
     h1 {
       margin-left: auto;
       margin-right: auto;
+      text-align: center;
     }
     .caption {
-      margin: 5px 5px;
+      text-align: center;
+      margin-bottom: 25px;
+    }
+
+    .personal-information {
+      display: flex;
+      flex-direction: column;
+      row-gap: 15px;
+    }
+
+    span {
+     margin-right: 10px; 
+    }
+
+    fieldset {
+      margin-bottom: 30px;
     }
   </style>
 </head>
 <body>
   <h1>Nick's MusicalMaker Survey Form</h1>
   <p class='caption'>Thank you for using our service, we hope to get feedback from you!</p>
-  <form>
-    <fieldset>
-      <label id="name-label"><input required id='name' type="text" placeholder="Type name"></label>
-      <label id="email-label"><input required id='email' type="email" placeholder="Type email"></label>
-      <label id="number-label"><input id='number' type="number" min="13" max="120" pattern="0-9" placeholder="Type age"></label>
-      <label><input id='dropdown' type="select"></label>
+  <form class="">
+    <fieldset class="personal-information">
+      <label id="name-label">Enter Your First Name:    <input required id='name' type="text" placeholder="Type name"></label>
+      <label id="email-label">Enter Your Email:    <input required id='email' type="email" placeholder="Type email"></label>
+      <label id="number-label">Enter Your Age:    <input id='number' type="number" min="13" max="120" pattern="0-9" placeholder="Type age"></label>
+      <label class="genre-label"><span>What music genres do you like?</span>
+        <select id='dropdown' type="select">
+          <option value="">--select one--</option>
+          <option value="1">Future House</option>
+          <option value="2">Rap</option>
+        </select>
+      </label>
     </fieldset>
-    <fieldset></fieldset>
-    <fieldset></fieldset>
-    <fieldset></fieldset>
-    <fieldset></fieldset>
-    <fieldset></fieldset>
-    <input id="submit">
+    <fieldset>
+      <legend>How often do you listen to music on a daily basis?</legend>
+      <label><input id="low" name='music-liking-time' type='radio' checked> Not really that much</label>
+      <label><input id='medium' name='music-liking-time' type='radio'> A moderate amount</label>
+      <label><input id='high' name='music-liking-time' type='radio'> Quite a bit actually</label>
+    </fieldset>
+    <fieldset>
+      <legend>Check all that apply: Who are your favorite artists?</legend>
+      <label><input id='Tchami' value="Tchami" name='favorite-artist' type="checkbox"> Tchami</label>
+      <label><input id='Oliver-Heldens' value="Oliver-Heldens" name='favorite-artist' type="checkbox"> Oliver Heldens</label>
+      <label><input id='Kyle-Meehan' value="Kyle-Meehan" name='favorite-artist' type="checkbox"> Kyle Meehan</label>
+      <label><input id='Bleu-Clair' value="Bleu-Clair" name='favorite-artist' type="checkbox"> Bleu Clair</label>
+    </fieldset>
+    <fieldset>
+      <label>
+        <textarea id="thoughts" name="thoughts" rows="5" columns="40" placeholder="The places that I listen to music the most are..."></textarea>
+      </label>
+    </fieldset>
+    <input type="submit" value="submit" id="submit">
   </form>
 
 
