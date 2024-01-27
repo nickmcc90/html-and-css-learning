@@ -45,17 +45,34 @@
     bottom: 0;
     display: flex;
     flex-direction: column;
-    width: 400px;
+    row-gap: 5px;
+    width: 275px;
+    z-index: 120;
+    border-right: 1px solid rgb(228, 228, 228);
+    background-color: white;
+    padding-top: 25px;
   }
 
   .sidebar-link {
     display: flex;
-    justify-content: left;
-    height: 70px;
+    align-items: center;
+    height: 40px;
     background-color: white;
   }
 
   .sidebar img {
     height: 24px;
+    width: 26%;
   }
+
+  .sidebar-link div {
+    font-family: Roboto, Arial;
+    font-size: 14px;
+    margin-left: -3px;
+  }
+
+  body {
+   padding-left: 301px; 
+  }
+
 }
